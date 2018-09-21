@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Merrill_GMW_Smoke_Automation">
+    <listeners>
+        <listener class-name="com.markit.DigitalAutomationFramework.common.BaseHTMLReporter"/>
+    </listeners>
+	<parameter name="browser" value="chrome"/>
+		<test   name="ML-GMW- Smoke-Automation Suite">
+		<classes>	
+			<class name ="com.markit.MerrilLynch.tests.OptionStrategyBuilderTest"/>
+			<class name ="com.markit.MerrilLynch.tests.CommoditiesTest"/>
+			<class name ="com.markit.MerrilLynch.tests.DebtMarketsTest"/>
+			<class name ="com.markit.MerrilLynch.tests.StocksTest"/>
+			<class name ="com.markit.MerrilLynch.tests.ForeignMarketsTest"/>
+			<class name ="com.markit.MerrilLynch.tests.USMarketsTest"/>
+			<class name ="com.markit.MerrilLynch.tests.MarketEventsTest"/>
+			<class name ="com.markit.MerrilLynch.tests.NewsTest"/>
+			<class name ="com.markit.MerrilLynch.tests.SectorsAndIndustriesTest"/>
+		</classes>
+	</test>	
+
+</suite>
